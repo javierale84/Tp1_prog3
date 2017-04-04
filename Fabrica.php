@@ -44,9 +44,10 @@ class Fabrica
 
         $posicion=array_search($empleado,$this->_empleados);
 
-      echo "Se elimina al empleado:".$empleado->ToString()." De la posicion: ".$posicion;
+     
         if($posicion!==false)
     {
+        echo "Se elimina al empleado:".$empleado->ToString()." De la posicion: ".$posicion;
         unset($this->_empleados[$posicion]);
         //print_r($this->_empleados);
         //var_dump($this->_empleados);
